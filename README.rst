@@ -25,22 +25,22 @@ object and acts as a reader::
 
 
 This produces a great deal of information, but it is conveniently accessed.
-The attributes of a Record are the 8 fixed fields from the VCF spec::
+The attributes of a Record are the 8 fixed fields from the VCF spec:
 
-    * ``Record.CHROM``
-    * ``Record.POS``
-    * ``Record.ID``
-    * ``Record.REF``
-    * ``Record.ALT``
-    * ``Record.QUAL``
-    * ``Record.FILTER``
-    * ``Record.INFO``
+* ``Record.CHROM``
+* ``Record.POS``
+* ``Record.ID``
+* ``Record.REF``
+* ``Record.ALT``
+* ``Record.QUAL``
+* ``Record.FILTER``
+* ``Record.INFO``
 
 plus attributes to handle genotype information:
 
-    * ``Record.FORMAT``
-    * ``Record.samples``
-    * ``Record.genotype``
+* ``Record.FORMAT``
+* ``Record.samples``
+* ``Record.genotype``
 
 ``samples`` and ``genotype``, not being the title of any column, are left lowercase.  The format
 of the fixed fields is from the spec.  Comma-separated lists in the VCF are
@@ -115,11 +115,11 @@ There are also a number of methods::
 Metadata regarding the VCF file itself can be investigated through the
 following attributes:
 
-    * ``Reader.metadata``
-    * ``Reader.infos``
-    * ``Reader.filters``
-    * ``Reader.formats``
-    * ``Reader.samples``
+* ``Reader.metadata``
+* ``Reader.infos``
+* ``Reader.filters``
+* ``Reader.formats``
+* ``Reader.samples``
 
 For example::
 
